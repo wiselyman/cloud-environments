@@ -39,11 +39,11 @@ exposecontroller:
 #    size: 20Gi
 
 monocular:
-  enabled: true
-  mongodb:
-    enabled: true
-    persistence:
-      enabled: true
+  enabled: false
+#  mongodb:
+#    enabled: true
+#    persistence:
+#      enabled: true
 
 nexus:
   image:
