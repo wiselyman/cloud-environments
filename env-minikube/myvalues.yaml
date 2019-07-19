@@ -32,11 +32,6 @@ exposecontroller:
   image:
     repository: gcr.azk8s.cn/jenkinsxio/exposecontroller
 
-Ingress:
-  enable: true
-  image:
-    repository: gcr.azk8s.cn/google_containers/defaultbackend
-
 
 nexus:
   image:
