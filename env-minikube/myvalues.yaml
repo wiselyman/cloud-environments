@@ -38,6 +38,11 @@ exposecontroller:
 #    storageClass: "standard"
 #    size: 20Gi
 
+monocular:
+  mongodb:
+    persistence:
+      enabled: true
+
 nexus:
   image:
     repository: gcr.azk8s.cn/jenkinsxio/nexus
@@ -45,9 +50,6 @@ nexus:
 jenkins:
   Master:
     Image: "jenkinsxio/jenkinsx"
-    Cpu: "500m"
-    Memory: "1024Mi"
-    JavaOpts: "-Xms512m -Xmx512m"
     ServiceType: NodePort
   Servers:
     Global:
